@@ -1,0 +1,10 @@
+image: maven:latest
+
+pages:
+  script:
+    - javadoc -html5 src/*.java -d public
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
